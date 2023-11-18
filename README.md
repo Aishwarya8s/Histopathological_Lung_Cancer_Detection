@@ -11,32 +11,24 @@ Here I want to classify histopathological lung tissue images into benign, malign
 
 
 I use CNN with 4 hidden layers (3 convolution layers and one fully connected). More details can be found in notebook. 
-  - Train accuracy: 0.936
-  - Validation accuracy: 0.931
-  - Test accuracy: 0.929
+  - Train accuracy: 0.97
+  - Validation accuracy: 0.947
+  - Test accuracy: 0.955
 
 
 
 Second apporach was to use deeper architecture, so I went a bit extreme and used ResNet50 architecture. Training accuracy significantly improved, but there is high variance here on the other hand.
   
-  - Train accuracy: 0.988
-  - Validation accuracy: 0.917
-  - Test accuracy: 0.916
+  - Train accuracy: 0.998
+  - Validation accuracy: 0.913
+  - Test accuracy: 0.955
 
 # Evaluation
 
   - Accuracy metric
   - Confusion matrix
-  - Exploration of model miastakes
+  - Exploration of model mistakes
   
-# Further actions
-
-To make this project better:
-
-First of all - minimize variance in the ResNet50 model with some regularization techniques or change the architecture (build something deep, but not as deep as ResNet50).
-
-Second thing is - detecting cancer images is nice, but much cooler would be to to do instance segmentation of cancerous cells. The shape of the cancerous cells plays a vital role in determining the severity of the cancer.
-
 # Used libraries
 
 - numpy, cv2
